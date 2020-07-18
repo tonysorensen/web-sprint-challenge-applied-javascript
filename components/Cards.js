@@ -26,22 +26,35 @@ axios
   .then((response) => {
     console.log("yay!", response.data.articles);
     let article = response.data.articles;
-    console.log(article);
-    article.bootstrap.forEach((item) => {
-      cardMaker(item);
+
+
+
+    console.log(Object.values(article)[0]);
+    
+    const newArticle = Object.values(article)
+    // const newArr = Object.values(article)
+    // console.log('newArr', newArr)
+    newArticle.forEach(element => {
+        element.forEach(newElement => {
+            cardMaker(newElement)
+        })
+        // console.log('element',element)
     });
-    article.javascript.forEach((item) => {
-      cardMaker(item);
-    });
-    article.jquery.forEach((item) => {
-      cardMaker(item);
-    });
-    article.node.forEach((item) => {
-      cardMaker(item);
-    });
-    article.technology.forEach((item) => {
-      cardMaker(item);
-    });
+    // article.bootstrap.forEach((item) => {
+    //   cardMaker(item);
+    // });
+    // article.javascript.forEach((item) => {
+    //   cardMaker(item);
+    // });
+    // article.jquery.forEach((item) => {
+    //   cardMaker(item);
+    // });
+    // article.node.forEach((item) => {
+    //   cardMaker(item);
+    // });
+    // article.technology.forEach((item) => {
+    //   cardMaker(item);
+    // });
   })
   .catch((err) => {
     console.log("error!", err);
@@ -67,6 +80,8 @@ const cardMaker = (article) => {
   headline.classList.add("headline");
   author.classList.add("author");
   imgContainer.classList.add("img-container");
+
+  
   headline.textContent = article.headline;
   img.src = article.authorPhoto;
   authorName.textContent = article.authorName;
