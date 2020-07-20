@@ -44,7 +44,7 @@ We would convert a NodeList into an Array so that we can use array methods like 
 
 5. What is a component?
 
-A component is a modular piece of code that consists of HTML, CSS and JS that is reusable and can stand alone.
+A component is a modular piece of code that consists of HTML, CSS and JS that is reusable and can stand alone.git add 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
