@@ -34,6 +34,6 @@ function Header(todaysDate, temperature) {
 
 }
 
-// let todaysDate = "07/18/20";
-// let temperature = " 67F";
-Header("07/18/20", "67F");
+let todaysDate = "07/18/20";
+let temperature = " 67F";
+Header(todaysDate, temperature);

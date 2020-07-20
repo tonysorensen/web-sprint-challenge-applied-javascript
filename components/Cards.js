@@ -27,18 +27,14 @@ axios
     console.log("yay!", response.data.articles);
     let article = response.data.articles;
 
-
-
     console.log(Object.values(article)[0]);
-    
-    const newArticle = Object.values(article)
-    // const newArr = Object.values(article)
-    // console.log('newArr', newArr)
-    newArticle.forEach(element => {
-        element.forEach(newElement => {
-            cardMaker(newElement)
-        })
-        // console.log('element',element)
+
+    const newArticle = Object.values(article);
+    newArticle.forEach((element) => {
+      element.forEach((newElement) => {
+        cardMaker(newElement);
+      });
+      // console.log('element',element)
     });
     // article.bootstrap.forEach((item) => {
     //   cardMaker(item);
@@ -81,7 +77,6 @@ const cardMaker = (article) => {
   author.classList.add("author");
   imgContainer.classList.add("img-container");
 
-  
   headline.textContent = article.headline;
   img.src = article.authorPhoto;
   authorName.textContent = article.authorName;
