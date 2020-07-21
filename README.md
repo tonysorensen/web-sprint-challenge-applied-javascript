@@ -32,7 +32,7 @@ The Document Object Model. It uses objects to represent the html elements of a w
 
 2. What is an event?
 
-An event is a user interaction with the website such as loading the page, clicking with the mouse, pressing a key, etc. 
+An event is a user interaction with the website such as loading the page, clicking with the mouse, pressing a key, etc.
 
 3. What is an event listener?
 
@@ -44,7 +44,7 @@ We would convert a NodeList into an Array so that we can use array methods like 
 
 5. What is a component?
 
-A component is a modular piece of code that consists of HTML, CSS and JS that is reusable and can stand alone.git add 
+A component is a modular piece of code that consists of HTML, CSS and JS that is reusable and can stand alone.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -87,13 +87,13 @@ In your solution, it is essential that you follow best practices and produce cle
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
 - [ ] Following the instructions in the `components/Carousel.js file`, create the Carousel component.
-- [ ] Render an error message on the page for the user, if the network request to fetch articles fails.
+- [x] Render an error message on the page for the user, if the network request to fetch articles fails.
 - [ ] Use the tabs at the top of the page to filter articles by topic.
 
 ## Submission format
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` branch (student's  Repo). **Please don't merge your own pull request**
+- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` branch (student's Repo). **Please don't merge your own pull request**
 - [ ] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete after receiving your pull-request
