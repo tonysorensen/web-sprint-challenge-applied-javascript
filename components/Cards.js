@@ -22,7 +22,7 @@
 // Use your function to create a card for each of the articles, and append each card to the DOM.
 
 axios
-  .get("https://lambda-times-backend.herokuapp.com/articles")
+  .get("https://lambda-times-backend45.herokuapp.com/articles")
   .then((response) => {
     console.log("yay!", response.data.articles);
     let article = response.data.articles;
@@ -53,7 +53,12 @@ axios
     // });
   })
   .catch((err) => {
-    console.log("error!", err);
+    const alert = document.createElement("h1");
+    alert.textContent = "Error! Articles failed to load.";
+    console.log(alert);
+    const alertEntry = document.querySelector(".errors-container");
+    alertEntry.appendChild(alert);
+    // alert("Articles failed to load!", err);
   });
 
 const entryPoint = document.querySelector(".cards-container");
